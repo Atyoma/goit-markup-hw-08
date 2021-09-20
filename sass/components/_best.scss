@@ -1,0 +1,35 @@
+.section-best {
+  padding-bottom: 0px;
+}
+
+.best-work {
+  display: flex;
+
+  .best-work__best-list {
+    width: 270px;
+  }
+
+  &__best-list:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.anten,
+.time,
+.computer,
+.astronavt {
+  display: flex;
+  background-color: #f5f4fa;
+  height: 120px;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.anten__logo,
+.time__logo,
+.astronavt__logo,
+.computer__logo {
+  width: 70px;
+  height: 70px;
+}

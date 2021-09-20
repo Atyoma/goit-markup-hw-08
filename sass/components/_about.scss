@@ -1,0 +1,43 @@
+.about {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.about__title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.about-list {
+  display: flex;
+
+  .about-list__photo {
+    width: 370px;
+    position: relative;
+  }
+
+  &__photo:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.desktop {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+
+  .desktop__apps {
+    padding-top: 27px;
+    padding-bottom: 27px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16, 41;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}
