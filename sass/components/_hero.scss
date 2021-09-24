@@ -1,7 +1,7 @@
 .section-hero {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 198px;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -11,27 +11,27 @@
     url(../images/Hero.jpg);
   background-position: center;
   background-size: cover;
+}
 
-  .section-hero__title {
-    margin-top: 0px;
-    margin-bottom: 30px;
-    min-width: 696px;
-    height: 120px;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    white-space: pre-wrap;
-    text-align: center;
-    color: #ffffff;
-  }
+.section-hero__title {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  min-width: 360px;
+  height: 84px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: pre-wrap;
+  text-align: center;
+  color: #ffffff;
 }
 
 .button {
   font-weight: bold;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.87;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -50,5 +50,21 @@
   &:hover,
   &:focus {
     background-color: #188ce8;
+  }
+}
+
+.section-hero {
+  @media screen and (min-width: 768px) {
+    padding-top: 200px;
+    padding-bottom: 280px;
+  }
+}
+
+.section-hero__title {
+  @media screen and (min-width: 768px) {
+    min-width: 696px;
+    height: 120px;
+    font-size: 44px;
+    line-height: 1.36;
   }
 }

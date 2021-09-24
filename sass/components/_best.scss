@@ -3,10 +3,15 @@
 }
 
 .best-work {
-  display: flex;
+  @media screen and (min-width: 767px) {
+    display: flex;
+    width: 100%;
+  }
 
   .best-work__best-list {
-    width: 270px;
+    @media screen and (min-width: 767px) {
+      width: 100%;
+    }
   }
 
   &__best-list:not(:last-child) {
