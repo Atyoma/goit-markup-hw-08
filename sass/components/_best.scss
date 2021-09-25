@@ -1,5 +1,6 @@
-.section-best {
+.section-best.section-best {
   padding-bottom: 0px;
+  padding-top: 30px;
 }
 
 .best-work {
@@ -7,16 +8,16 @@
     display: flex;
     width: 100%;
   }
+}
 
-  .best-work__best-list {
-    @media screen and (min-width: 767px) {
-      width: 100%;
-    }
+.best-work__best-list {
+  @media screen and (min-width: 767px) {
+    width: 100%;
   }
+}
 
-  &__best-list:not(:last-child) {
-    margin-right: 30px;
-  }
+.best-work__best-list:not(:last-child) {
+  margin-right: 30px;
 }
 
 .anten,
