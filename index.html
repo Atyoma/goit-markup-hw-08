@@ -17,7 +17,7 @@
 
 <body>
     <!--Шапка сайта-->
-    <header class="header">
+     <header class="header"> 
         <div class="container container--flexible">
             <a class="logo header__logo" href="./">
                 <span class="logo__label logo__label--start" lang="en">Web</span>
@@ -176,7 +176,7 @@
                                 <use href="./images/icons.svg#antenna"></use>
                             </svg>
                         </div>
-                        <h3 class="third-title atention">Внимание к деталям</h3>
+                        <h3 class="third-title centered">Внимание к деталям</h3>
                         <p class="main-text">Идейные соображения, а также начало повседневной работы по формированию
                             позиции.</p>
                     </li>
@@ -186,7 +186,7 @@
                                 <use href="./images/icons.svg#clock"></use>
                             </svg>
                         </div>
-                        <h3 class="third-title">Пунктуальность</h3>
+                        <h3 class="third-title centered">Пунктуальность</h3>
                         <p class="main-text">Задача организации, в особенности же рамки и место обучения кадров влечет за
                             собой.</p>
                     </li>
@@ -196,7 +196,7 @@
                                 <use href="./images/icons.svg#diagram"></use>
                             </svg>
                         </div>
-                        <h3 class="third-title">Планирование</h3>
+                        <h3 class="third-title centered">Планирование</h3>
                         <p class="main-text">Равным образом консультация с широким активом в значительной степени
                             обуславливает.</p>
                     </li>
@@ -206,7 +206,7 @@
                                 <use href="./images/icons.svg#astronaut"></use>
                             </svg>
                         </div>
-                        <h3 class="third-title">Современные технологии</h3>
+                        <h3 class="third-title centered">Современные технологии</h3>
                         <p class="main-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.
                         </p>
                     </li>
@@ -214,7 +214,7 @@
             </div>
         </section>
         <!--       Чем мы занимаемся-->
-        <!-- <section class="section about ">
+        <section class="section about ">
             <div class=" container">
                 <h2 class="secondary-title about__title ">Чем мы занимаемся</h2>
             <ul class="about-list list">
@@ -238,14 +238,22 @@
                 </li>
             </ul>
             </div>
-        </section> -->
+        </section>
         <!--         Наша команда          -->
-        <!-- <section class="section team">
+        <section class="section team">
             <div class="container">
                 <h2 class="secondary-title team__title">Наша команда</h2>
             <ul class="team-list list">
                 <li class="team-list__persone">
-                    <img src="./images/img-4.jpg" alt="Молодой парень в очках с бородой" width="270" height="260">
+                    <picture>
+                        <source srcset="./images/team/team-card1-desktop.jpg 1x, ./images/team/team-card1-desktop@2x.jpg 2x"
+                            media="(min-width:1200px)" />
+                        <source srcset="./images/team/team-card1-tab.jpg 1x, ./images/team/team-card1-tab@2x.jpg 2x"
+                            media="(min-width:768px)" />
+                        <source srcset="./images/team/team-card1-mob.jpg 1x, ./images/team/team-card1-mob@2x.jpg 2x"
+                            media="(min-width:320px)" />
+                        <img src="./images/team/team-card1-desktop.jpg" alt="Молодой парень в очках с бородой">
+                    </picture>
                     <div class="block">
                         <h3 class="block__title">Игорь Демьяненко</h3>
                     <p lang="en" class="team-list__text">Product Designer</p>
@@ -282,7 +290,14 @@
 </div>
 </li>
                 <li class="team-list__persone">
-                    <img src="./images/img-5.jpg" alt="Молодая девушка улыбается" width="270" height="260">
+<picture>
+    <source srcset="./images/team/team-card2-desktop.jpg 1x, ./images/team/team-card2-desktop@2x.jpg 2x" media="(min-width:1200px)"/>
+    <source srcset="./images/team/team-card2-tab.jpg 1x, ./images/team/team-card2-tab@2x.jpg 2x" media="(min-width:768px)"/>
+    <source srcset="./images/team/team-card2-mob.jpg 1x, ./images/team/team-card2-mob@2x.jpg 2x" media="(min-width:320px)"/>
+<img src="./images/team/team-card2-desktop.jpg" alt="Молодая девушка улыбается">
+</picture>
+                    
+                    
                     <div class="block">
                         <h3 class="block__title"> Ольга Репина</h3>
                     <p lang="en" class="team-list__text">Frontend Developer</p>
@@ -319,7 +334,16 @@
                 </div>
                 </li>
                 <li class="team-list__persone">
-                    <img src="./images/img-6.jpg" alt="Молодой парень в голубой рубашке" width="270" height="260">
+                <picture>
+                    <source srcset="./images/team/team-card3-desktop.jpg 1x, ./images/team/team-card3-desktop@2x.jpg 2x"
+                        media="(min-width:1200px)" />
+                    <source srcset="./images/team/team-card3-tab.jpg 1x, ./images/team/team-card3-tab@2x.jpg 2x"
+                        media="(min-width:768px)" />
+                    <source srcset="./images/team/team-card3-mob.jpg 1x, ./images/team/team-card3-mob@2x.jpg 2x"
+                        media="(min-width:320px)" />
+                    <img src="./images/team/team-card3-desktop.jpg" alt="Молодой парень в голубой рубашке">
+                </picture>
+                      
                     <div class="block">
                         <h3 class="block__title"> Николай Тарасов</h3>
                     <p lang="en" class="team-list__text">Marketing</p>
@@ -356,7 +380,15 @@
                 </div>
             </li>
                     <li class="team-list__persone">
-                        <img src="./images/img-7.jpg" alt="Молодой парень в черной футболке загадочно улыбается" width="270" height="260">
+<picture>
+    <source srcset="./images/team/team-card4-desktop.jpg 1x, ./images/team/team-card4-desktop@2x.jpg 2x"
+        media="(min-width:1200px)" />
+    <source srcset="./images/team/team-card4-tab.jpg 1x, ./images/team/team-card4-tab@2x.jpg 2x"
+        media="(min-width:768px)" />
+    <source srcset="./images/team/team-card4-mob.jpg 1x, ./images/team/team-card4-mob@2x.jpg 2x"
+        media="(min-width:320px)" />
+    <img src="./images/team/team-card4-desktop.jpg" alt="Молодой парень в черной футболке загадочно улыбается">
+</picture>
                     <div class="block">
                         <h3 class="block__title"> Михаил Ермаков</h3>
                         <p lang="en" class="team-list__text">UI Designer</p>
@@ -394,9 +426,9 @@
                     </li>
                     </ul>
                     </div>
-        </section> -->
+        </section>
                     <!-- Постоянные клиенты -->
-        <!-- <section class="section">
+        <section class="section section-clients">
             <div class="container clients">
                 <h2 class="secondary-title clients__title ">Постоянные клиенты</h2>
                 <ul class="customers-list list">
@@ -434,71 +466,71 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
     </main>
                               <!--Подвал-->
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container footer__block">
-            <div class="contacts">
-                <a class="logo header__logo" href="./"> 
-                    <span class="logo__label logo__label--start" lang="en">Web</span>
-                    <span class="logo__label logo__label--white" lang="en">Studio</span>
-                </a>
-                <address class="contacts__adress">
-                    <ul class="adress-list list">
-                        <li class="adress-list__unit">
-                            <a class="footer-map" href="https://goo.gl/maps/ZagJUW4YwhbjQDQ17" target="_blank"
-                                rel="noopener noreferrer">г. Киев,пр-т Леси Украинки, 26</a>
+            <div class="contact-social-block">
+                <div class="contacts">
+                    <a class="logo footer-logo" href="./">
+                        <span class="logo__label logo__label--start" lang="en">Web</span>
+                        <span class="logo__label logo__label--white" lang="en">Studio</span>
+                    </a>
+                    <address class="contacts__adress">
+                        <ul class="adress-list list">
+                            <li class="adress-list__unit">
+                                <a class="footer-map" href="https://goo.gl/maps/ZagJUW4YwhbjQDQ17" target="_blank"
+                                    rel="noopener noreferrer">г. Киев,пр-т Леси Украинки, 26</a>
+                            </li>
+                            <li class="adress-list__unit">
+                                <a class="footer-mail" href="mailto:info@example.com">info@example.com</a>
+                            </li>
+                            <li class="adress-list__unit">
+                                <a class="footer-tel" href="tel:+380991111111">+38 099 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="social-block">
+                    <p class="social-block__title">Присоединяйтесь</p>
+                    <ul class="social-list list">
+                        <li class="social-list__unit">
+                            <a class="social-link" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                                <svg class="inlogo">
+                                    <use href="./images/icons.svg#instagram"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="adress-list__unit">
-                            <a class="footer-mail" href="mailto:info@example.com">info@example.com</a>
+                        <li class="social-list__unit">
+                            <a class="social-link" href="https://twitter.com">
+                                <svg class="inlogo">
+                                    <use href="./images/icons.svg#twitter"></use>
+                                </svg>
+                            </a>
                         </li>
-                        <li class="adress-list__unit">
-                            <a class="footer-tel" href="tel:+380991111111">+38 099 111 11 11</a>
+                        <li class="social-list__unit">
+                            <a class="social-link" href="https://facebook.com">
+                                <svg class="inlogo">
+                                    <use href="./images/icons.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list__unit">
+                            <a class="social-link" href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                                <svg class="inlogo">
+                                    <use href="./images/icons.svg#linkedin"></use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
-                </address>
-            </div>
-            <div class="social-block">
-                <p class="social-block__title">Присоединяйтесь</p>
-                <ul class="social-list list">
-                    <li class="social-list__unit">
-                        <a class="social-link" href="https://instagram.com" target="_blank"
-                            rel="noopener noreferrer">
-                            <svg class="inlogo">
-                                <use href="./images/icons.svg#instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-list__unit">
-                        <a class="social-link" href="https://twitter.com">
-                            <svg class="inlogo">
-                                <use href="./images/icons.svg#twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-list__unit">
-                        <a class="social-link" href="https://facebook.com">
-                            <svg class="inlogo">
-                                <use href="./images/icons.svg#facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-list__unit">
-                        <a class="social-link" href="https://www.linkedin.com" target="_blank"
-                            rel="noopener noreferrer">
-                            <svg class="inlogo">
-                                <use href="./images/icons.svg#linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                </div>
             </div>
             <div class="join">
                 <p class="join__title">Подпишитесь на рассылку</p>
                 <form class="join__signup" name="signup_form" autocomplete="off">
-                    <div class="form-fild">
-                   <input class="form-fild__email-input" id="input-email" type="email" name="email" placeholder="E-mail" />
+                    <div class="form-fild-ff">
+                   <input class="form-fild-ff__email-input" id="input-email" type="email" name="email" placeholder="E-mail" />
                     <button class="btn-submit" type="submit">
                         <span class="btn-submit__text">Подписаться<svg class="btn-submit__logo" width="24" height="24">
                             <use href="./images/icons.svg#icon-send"></use>
@@ -509,7 +541,7 @@
                 </form>
         </div>
         </div>
-    </footer> -->
+    </footer>
     
      <script src="./js/modal.js">
     </script>   

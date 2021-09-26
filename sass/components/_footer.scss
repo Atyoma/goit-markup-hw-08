@@ -2,11 +2,43 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
-
+  @media screen and(min-width:1200px) {
+    height: 252px;
+  }
   .footer__block {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and(min-width:1200px) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
   }
+}
+
+.contacts {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.logo.footer-logo {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.67;
+  letter-spacing: 0.03em;
+  color: #212121;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 250ms;
+  transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  text-decoration: none;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 20px;
 }
 
 .logo__label--white {
@@ -20,7 +52,7 @@
 }
 
 .adress-list__unit:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .footer-map {
@@ -56,10 +88,11 @@
 }
 
 .social-block {
-  margin-left: 70px;
+  margin: 0 auto;
 
   .social-block__title {
     margin-bottom: 20px;
+
     font-family: Roboto;
     font-weight: bold;
     font-size: 14px;
@@ -68,12 +101,14 @@
     text-transform: uppercase;
     color: #ffffff;
     font-style: normal;
+    text-align: center;
   }
 }
 
 .social-list {
   display: flex;
   justify-content: flex-start;
+  margin-bottom: 60px;
 
   .social-list__unit {
     width: 44px;
@@ -99,5 +134,44 @@
   &:hover,
   &:focus {
     background-color: var(--main-akcent-color);
+  }
+}
+
+.contacts {
+  @media screen and(min-width:768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 76px;
+  }
+}
+
+.social-block {
+  @media screen and(min-width:768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+    margin-right: 89px;
+  }
+}
+
+.contact-social-block {
+  @media screen and(min-width:768px) {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+  }
+}
+
+@media screen and(min-width:1200px) {
+  .social-block {
+    margin: 0;
+    padding-left: 70px;
+  }
+  .footer__block {
+    flex-direction: row;
+    align-items: flex-start;
   }
 }
