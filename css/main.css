@@ -557,7 +557,15 @@ body {
   margin-right: 10px;
 }
 
-.bottom-block {
+/* .bottom-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  height: 100%;
+} */
+.all-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -568,10 +576,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   height: 100%;
 }
 
