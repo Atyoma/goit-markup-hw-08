@@ -1,6 +1,5 @@
 .join {
   width: 100%;
-
   margin-right: 0;
 
   .join__title {
@@ -12,6 +11,9 @@
     color: #ffffff;
     text-align: center;
     margin-bottom: 20px;
+    @media screen and(min-width:1200px) {
+      margin-right: auto;
+    }
   }
 }
 .form-fild-ff {
@@ -38,6 +40,7 @@
     width: 100%;
     @media screen and(min-width:1200px) {
       width: 358px;
+      margin-bottom: 20px;
     }
   }
 }
@@ -51,6 +54,11 @@
   border: none;
   cursor: pointer;
   margin-top: 20px;
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-left: 15px;
+  }
 
   .btn-submit__text {
     padding-left: 29px;
@@ -73,6 +81,8 @@
     height: 86px;
     margin-right: 0;
     margin-left: 93px;
+    display: flex;
+    flex-direction: column;
   }
   .form-fild-ff {
     position: relative;
