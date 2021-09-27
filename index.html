@@ -219,19 +219,29 @@
                 <h2 class="secondary-title about__title ">Чем мы занимаемся</h2>
             <ul class="about-list list">
                 <li class="about-list__photo">
-                    <img src="./images/img-1.jpg" alt="Программист пишет код" width="370" height="294">
+                    <picture>
+                        <source srcset="./images/img-1.jpg 1x, ./images/img-1@2x.jpg 2x"
+                            media="(min-width:1200px)" />
+                        <img src="./images/img-1.jpg" alt="Программист пишет код">
+                    </picture>
                     <div class="desktop">
                         <p class="desktop__apps">Десктопные приложения</p>
                     </div>
                 </li>
                 <li class="about-list__photo">
-                        <img src="./images/img-2.jpg" alt="Код адаптируют к мобильному приложению" width="370" height="294">
+                    <picture>
+                        <source srcset="./images/img-2.jpg 1x, ./images/img-2@2x.jpg 2x" media="(min-width:1200px)" />
+                        <img src="./images/img-2.jpg" alt="Код адаптируют к мобильному приложению">
+                    </picture>
                     <div class="desktop">
                         <p class="desktop__apps">Мобильные приложения</p>
                     </div>
                 </li>
                 <li class="about-list__photo">
-                        <img src="./images/img-3.jpg" alt="Дизайнер проводит оформление контента" width="370" height="294">
+                    <picture>
+                        <source srcset="./images/img-3.jpg 1x, ./images/img-3@2x.jpg 2x" media="(min-width:1200px)" />
+                        <img src="./images/img-3.jpg" alt="Дизайнер проводит оформление контента">
+                    </picture>
                     <div class="desktop">
                         <p class="desktop__apps">Дизайнерские решения</p>
                     </div>
