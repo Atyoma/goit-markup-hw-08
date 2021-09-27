@@ -17,7 +17,7 @@
 
 <body>
     <!--Шапка сайта-->
-     <header class="header"> 
+    <header class="header">
         <div class="container container--flexible">
             <a class="logo header__logo" href="./">
                 <span class="logo__label logo__label--start" lang="en">Web</span>
@@ -52,31 +52,30 @@
                 </li>
             </ul>
             <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-                <svg class="btn-open" width="24" height="16">
+                <svg class="open-icon" width="24" height="16">
                     <use href="./images/icons.svg#mobile-open"></use>
                 </svg>
             </button>
         </div>
         <div class="menu-container js-menu-container" id="mobile-menu">
             <button class="menu-close js-close-menu">
-                <svg class="btn-close" width="16" height="24">
-                    <use href="./images/icons.svg#close40px"></use>
+                <svg class="close-icon" width="24" height="16">
+                    <use href="./images/icons.svg#mobile-close"></use>
                 </svg>
             </button>
-            <ul class="menu-container-list list">
-                <li class="menu-container-list__unit">
-                    <a class="menu-container-list__link link menu-container-list__link--current"
-                        href="./index.html">Студия</a>
-                </li>
-                <li class="menu-container-list__unit">
-                    <a class="menu-container-list__link link" href="./portfolio.html">Портфолио</a>
-                </li>
-                <li class="menu-container-list__unit">
-                    <a class="menu-container-list__link link" href="./contacts.html">Контакты</a>
-                </li>
-            </ul>
-    
-            <div class="bottom-block">
+            <div class="all-block">
+                <ul class="menu-container-list list">
+                    <li class="menu-container-list__unit">
+                        <a class="menu-container-list__link link menu-container-list__link--current"
+                            href="./index.html">Студия</a>
+                    </li>
+                    <li class="menu-container-list__unit">
+                        <a class="menu-container-list__link link" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="menu-container-list__unit">
+                        <a class="menu-container-list__link link" href="./contacts.html">Контакты</a>
+                    </li>
+                </ul>
                 <ul class="menu-container-info list">
                     <li class="menu-container-info__unit">
                         <a class="info-link-tel link" href="tel:+3809611111">+38 096 111 11 11</a>
@@ -94,7 +93,6 @@
                 </ul>
             </div>
         </div>
-    
     </header>
     
     <!--Герой-->
@@ -306,9 +304,7 @@
     <source srcset="./images/team/team-card2-mob.jpg 1x, ./images/team/team-card2-mob@2x.jpg 2x" media="(min-width:320px)"/>
 <img src="./images/team/team-card2-desktop.jpg" alt="Молодая девушка улыбается">
 </picture>
-                    
-                    
-                    <div class="block">
+       <div class="block">
                         <h3 class="block__title"> Ольга Репина</h3>
                     <p lang="en" class="team-list__text">Frontend Developer</p>
                 <ul class="social-team list">
@@ -436,7 +432,7 @@
                     </li>
                     </ul>
                     </div>
-        </section>
+</section>
                     <!-- Постоянные клиенты -->
         <section class="section section-clients">
             <div class="container clients">

@@ -164,6 +164,7 @@
 
 .menu-container-info {
   margin-bottom: 64px;
+  margin-top: auto;
 }
 
 .social-mob {
@@ -194,10 +195,18 @@
   margin-right: 10px;
 }
 
-.bottom-block {
+/* .bottom-block {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-content: flex-start;
   flex-wrap: wrap;
+  height: 100%;
+} */
+
+.all-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
