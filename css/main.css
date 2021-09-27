@@ -520,6 +520,7 @@ body {
 
 .menu-container-info {
   margin-bottom: 64px;
+  margin-top: auto;
 }
 
 .social-mob {
@@ -571,6 +572,7 @@ body {
       align-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  height: 100%;
 }
 
 .section-hero {
