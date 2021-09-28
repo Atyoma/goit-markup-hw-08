@@ -528,11 +528,9 @@ body {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 48px;
 }
 
 .social-mob__link {
@@ -1138,13 +1136,6 @@ body {
   background-color: #f5f4fa;
 }
 
-@media screen and (max-width: 767px) {
-  .team {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-
 .team .team__title {
   margin-top: 0px;
   margin-bottom: 30px;
@@ -1160,9 +1151,15 @@ body {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .section.team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .team-list__persone {
   text-align: center;
-  width: 100%;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -1196,7 +1193,6 @@ body {
 
 @media screen and (min-width: 768px) {
   .team-list__persone {
-    width: 100%;
     margin-left: 30px;
     margin-top: 30px;
     -ms-flex-preferred-size: calc(100% / 2 - 30px);
