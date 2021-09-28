@@ -476,15 +476,12 @@ body {
   margin-left: auto;
 }
 
-.menu-container-list {
-  margin-bottom: 30px;
-}
-
 .menu-container-list__link {
-  font-weight: 500px;
+  font-weight: 500;
+  font-style: normal;
   font-size: 40px;
   line-height: 1.76;
-  letter-spacing: 0.02;
+  letter-spacing: 0.02em;
   color: #212121;
 }
 
@@ -496,7 +493,7 @@ body {
   color: #2196f3;
 }
 
-.menu-container-list__unit {
+.menu-container-list__unit:not(:last-child) {
   margin-bottom: 32px;
 }
 
@@ -506,38 +503,40 @@ body {
 
 .info-link-tel {
   font-weight: 500px;
+  font-style: normal;
   font-size: 34px;
   line-height: 1.18;
-  letter-spacing: 0.02;
+  letter-spacing: 0.02em;
   color: #2196f3;
 }
 
 .info-link-mail {
   font-weight: 500px;
+  font-style: normal;
   font-size: 24px;
   line-height: 1.67;
-  letter-spacing: 0.02;
+  letter-spacing: 0.02em;
   color: #757575;
 }
 
-.menu-container-info {
+/* .menu-container-info {
   margin-bottom: 64px;
-}
-
+} */
 .social-mob {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 48px;
 }
 
 .social-mob__link {
+  font-style: normal;
   font-weight: 500px;
   font-size: 18px;
   line-height: 1.22;
-  letter-spacing: 0.02;
+  letter-spacing: 0.02em;
   color: #2196f3;
 }
 
@@ -1343,6 +1342,13 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 1200px) {
+  .icon-link {
+    width: 170px;
+    height: 92px;
+  }
+}
+
 .icon-link:hover, .icon-link:focus {
   fill: var(--main-akcent-color);
   border-color: var(--main-akcent-color);
@@ -1615,6 +1621,12 @@ body {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .join .join__title {
+    font-weight: bold;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .join .join__title {
     margin-right: auto;
@@ -1767,7 +1779,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 40px;
+  padding-bottom: 50px;
 }
 
 @media screen and (max-width: 767px) {
