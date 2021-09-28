@@ -136,8 +136,10 @@
   margin-left: auto;
   align-items: center;
   display: none;
+}
 
-  &__unit:not(:last-child) {
+@media screen and(min-width:1200px) {
+  .list-info__unit:not(:last-child) {
     margin-right: 50px;
   }
 }

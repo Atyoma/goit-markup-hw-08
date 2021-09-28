@@ -284,8 +284,10 @@ body {
   display: none;
 }
 
-.list-info__unit:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 1200px) {
+  .list-info__unit:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .link-mail,
@@ -556,7 +558,7 @@ body {
   margin-right: 10px;
 }
 
-.bottom-block {
+.all-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -567,10 +569,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  height: 100%;
 }
 
 .section-hero {
@@ -1172,10 +1171,6 @@ body {
   .team-list__persone:not(:last-child) {
     margin-bottom: 30px;
   }
-}
-
-.team-list {
-  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
