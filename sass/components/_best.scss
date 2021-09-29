@@ -1,6 +1,13 @@
 .section.section-best {
-  padding-bottom: 0px;
+  padding-bottom: 60px;
   padding-top: 30px;
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0;
+    padding-top: 94px;
+  }
 }
 
 /*.best-work__best-list:not(:last-child) {
@@ -35,7 +42,6 @@
 }
 
 .best-work {
-  margin-bottom: 60px;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -54,7 +60,6 @@
   @media screen and (min-width: 768px) {
     flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
-    margin-top: 30px;
   }
   @media screen and (min-width: 1200px) {
     flex-basis: calc(100% / 4 - 30px);

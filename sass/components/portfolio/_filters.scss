@@ -24,14 +24,10 @@
 }
 
 .filters {
-  @media screen and(min-width:1200px) {
-    padding-top: 6px;
-    padding-bottom: 22px;
-  }
   &__workslist {
     display: flex;
     justify-content: center;
-    padding-bottom: 50px;
+    margin-bottom: 40px;
     @media screen and (max-width: 767px) {
       flex-wrap: wrap;
       justify-content: start;
@@ -60,6 +56,6 @@
 
 @media screen and (min-width: 1200px) {
   .filters__workslist {
-    margin-bottom: 50px;
+    margin-bottom: 80px;
   }
 }
